@@ -16,6 +16,6 @@ module.exports = {
 
 		queue.destroy();
 
-        await interaction.reply("Why you do this to me?")
+        await interaction.reply("Fuck Mohamed Sayed Zakaria!")
 	},
 }
