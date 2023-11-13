@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "start": "node src/app.js",
+    "dev": "env-cmd -f dev.env nodemon src/app.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "anas12312 <anashesham000@gmail.com>",
