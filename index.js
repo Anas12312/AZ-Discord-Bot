@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 require('dotenv').config();
 
 const {REST} = require('@discordjs/rest');
@@ -42,10 +43,10 @@ client.on("ready", (c) => {
     const guild_ids = client.guilds.cache.map(guild => guild.id);
 
 
-    const rest = new REST({version: '9'}).setToken(process.env.TOKEN);
+    const rest = new REST({version: '9'}).setToken("MTEzMDkxNTk1ODI1MzQzMjg3Mw.GGK4-1.noePZjPfJyXQyvXlu1k9twlyyZWAURHtEvI4L0");
     for (const guildId of guild_ids)
     {
-        rest.put(Routes.applicationGuildCommands(process.env.CLIENT_ID, guildId), 
+        rest.put(Routes.applicationGuildCommands("1130915958253432873", guildId), 
             {body: commands})
         .then(() => console.log('Successfully updated commands for ' + c.user.tag))
         .catch(console.error);
@@ -69,9 +70,9 @@ client.on("interactionCreate", async interaction => {
             await interaction.reply({content: "There was an error executing this command"});
         }
     }catch(e) {
-        console.log(e)
+        console.log("Error")
     }
 });
 
-client.login(process.env.TOKEN);
+client.login("MTEzMDkxNTk1ODI1MzQzMjg3Mw.GGK4-1.noePZjPfJyXQyvXlu1k9twlyyZWAURHtEvI4L0");
 
