@@ -21,7 +21,7 @@
     "discord-api-types": "^0.37.49",
     "discord-player": "^5.2.2",
     "discord.js": "^14.11.0",
-    "dotenv": "^16.0.1",
+    "dotenv": "^16.4.4",
     "ffmpeg": "^0.0.4",
     "ffmpeg-static": "^5.1.0"
   },
